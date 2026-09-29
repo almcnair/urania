@@ -1,0 +1,1 @@
+[urania/sessions/urania/dfdb78d9-9123-4649-b592-87328e6620db.jsonl#L6] Assistant: I'll compute today's sky and produce the briefing. First, let me check the natal chart and run the ephemeris.

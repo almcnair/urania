@@ -1,0 +1,83 @@
+Here is Austin_Natal birth chart data. Continue the analysis using this data.
+
+Placements:
+- Sun 12° Taurus in 11th House
+- Moon 15° Cancer in 1st House
+- Mercury 8° Taurus in 11th House
+- Venus 13° Aries in 10th House
+- Mars 18° Gemini in 12th House
+- Jupiter 14° Aries in 10th House
+- Saturn 20° Sagittarius in 6th House (Retrograde)
+- Uranus 26° Sagittarius in 6th House (Retrograde)
+- Neptune 7° Capricorn in 7th House (Retrograde)
+- Pluto 8° Scorpio in 5th House (Retrograde)
+- Chiron 18° Gemini in 12th House
+- North Node 11° Aries in 10th House (Retrograde)
+- South Node 11° Libra in 4th House (Retrograde)
+- Ascendant 20° Cancer in 1st House
+- Descendant 20° Capricorn in 7th House
+- Midheaven 6° Aries in 10th House
+- IC 6° Libra in 4th House
+- Black Moon 18° Cancer in 1st House (Retrograde)
+
+House Cusps
+- 1st House: 0° 0' Cancer
+- 2nd House: 0° 0' Leo
+- 3rd House: 0° 0' Virgo
+- 4th House: 0° 0' Libra
+- 5th House: 0° 0' Scorpio
+- 6th House: 0° 0' Sagittarius
+- 7th House: 0° 0' Capricorn
+- 8th House: 0° 0' Aquarius
+- 9th House: 0° 0' Pisces
+- 10th House: 0° 0' Aries
+- 11th House: 0° 0' Taurus
+- 12th House: 0° 0' Gemini
+
+Aspects:
+- Sun 12° Taurus in 11th House sextile (63° 6′ apart, offset +3° 6′) Moon 15° Cancer in 1st House
+- Sun 12° Taurus in 11th House conjunct ( 4°26′ apart, offset +4°26′) Mercury 8° Taurus in 11th House
+- Sun 12° Taurus in 11th House trine (124°48′ apart, offset +4°48′) Neptune 7° Capricorn in 7th House (Retrograde)
+- Sun 12° Taurus in 11th House opposition (175°47′ apart, offset -4°12′) Pluto 8° Scorpio in 5th House (Retrograde)
+- Sun 12° Taurus in 11th House trine (112° 2′ apart, offset -7°57′) Descendant 20° Capricorn in 7th House
+- Moon 15° Cancer in 1st House square (92°32′ apart, offset +2°32′) Venus 13° Aries in 10th House
+- Moon 15° Cancer in 1st House square (91° 1′ apart, offset +1° 1′) Jupiter 14° Aries in 10th House
+- Moon 15° Cancer in 1st House opposition (172° 4′ apart, offset -7°55′) Neptune 7° Capricorn in 7th House (Retrograde)
+- Moon 15° Cancer in 1st House trine (112°41′ apart, offset -7°18′) Pluto 8° Scorpio in 5th House (Retrograde)
+- Moon 15° Cancer in 1st House square (94°44′ apart, offset +4°44′) North Node 11° Aries in 10th House (Retrograde)
+- Moon 15° Cancer in 1st House square (85°15′ apart, offset -4°44′) South Node 11° Libra in 4th House (Retrograde)
+- Moon 15° Cancer in 1st House conjunct ( 4°51′ apart, offset +4°51′) Ascendant 20° Cancer in 1st House
+- Moon 15° Cancer in 1st House opposition (175° 8′ apart, offset -4°51′) Descendant 20° Capricorn in 7th House
+- Moon 15° Cancer in 1st House conjunct ( 2°16′ apart, offset +2°16′) Black Moon 18° Cancer in 1st House (Retrograde)
+- Mercury 8° Taurus in 11th House trine (120°22′ apart, offset +0°22′) Neptune 7° Capricorn in 7th House (Retrograde)
+- Mercury 8° Taurus in 11th House opposition (179°45′ apart, offset +0°14′) Pluto 8° Scorpio in 5th House (Retrograde)
+- Venus 13° Aries in 10th House conjunct ( 1°30′ apart, offset +1°30′) Jupiter 14° Aries in 10th House
+- Venus 13° Aries in 10th House trine (112°57′ apart, offset -7° 2′) Saturn 20° Sagittarius in 6th House (Retrograde)
+- Venus 13° Aries in 10th House square (95°23′ apart, offset +5°23′) Neptune 7° Capricorn in 7th House (Retrograde)
+- Venus 13° Aries in 10th House conjunct ( 2°12′ apart, offset +2°12′) North Node 11° Aries in 10th House (Retrograde)
+- Venus 13° Aries in 10th House opposition (177°47′ apart, offset -2°12′) South Node 11° Libra in 4th House (Retrograde)
+- Venus 13° Aries in 10th House square (97°23′ apart, offset +7°23′) Ascendant 20° Cancer in 1st House
+- Venus 13° Aries in 10th House square (82°36′ apart, offset -7°23′) Descendant 20° Capricorn in 7th House
+- Venus 13° Aries in 10th House square (94°48′ apart, offset +4°48′) Black Moon 18° Cancer in 1st House (Retrograde)
+- Mars 18° Gemini in 12th House opposition (178°16′ apart, offset -1°43′) Saturn 20° Sagittarius in 6th House (Retrograde)
+- Mars 18° Gemini in 12th House opposition (172°15′ apart, offset -7°44′) Uranus 26° Sagittarius in 6th House (Retrograde)
+- Mars 18° Gemini in 12th House conjunct ( 0°11′ apart, offset +0°11′) Chiron 18° Gemini in 12th House
+- Jupiter 14° Aries in 10th House trine (114°27′ apart, offset -5°32′) Saturn 20° Sagittarius in 6th House (Retrograde)
+- Jupiter 14° Aries in 10th House conjunct ( 3°42′ apart, offset +3°42′) North Node 11° Aries in 10th House (Retrograde)
+- Jupiter 14° Aries in 10th House opposition (176°17′ apart, offset -3°42′) South Node 11° Libra in 4th House (Retrograde)
+- Jupiter 14° Aries in 10th House square (95°53′ apart, offset +5°53′) Ascendant 20° Cancer in 1st House
+- Jupiter 14° Aries in 10th House square (84° 6′ apart, offset -5°53′) Descendant 20° Capricorn in 7th House
+- Jupiter 14° Aries in 10th House square (93°18′ apart, offset +3°18′) Black Moon 18° Cancer in 1st House (Retrograde)
+- Saturn 20° Sagittarius in 6th House (Retrograde) opposition (178°28′ apart, offset -1°31′) Chiron 18° Gemini in 12th House
+- Uranus 26° Sagittarius in 6th House (Retrograde) opposition (172°27′ apart, offset -7°32′) Chiron 18° Gemini in 12th House
+- Neptune 7° Capricorn in 7th House (Retrograde) sextile (59°23′ apart, offset +0°36′) Pluto 8° Scorpio in 5th House (Retrograde)
+- Neptune 7° Capricorn in 7th House (Retrograde) square (93°11′ apart, offset +3°11′) North Node 11° Aries in 10th House (Retrograde)
+- Neptune 7° Capricorn in 7th House (Retrograde) square (86°48′ apart, offset -3°11′) South Node 11° Libra in 4th House (Retrograde)
+- Neptune 7° Capricorn in 7th House (Retrograde) square (88°40′ apart, offset -1°19′) Midheaven 6° Aries in 10th House
+- Neptune 7° Capricorn in 7th House (Retrograde) square (91°19′ apart, offset +1°19′) IC 6° Libra in 4th House
+- North Node 11° Aries in 10th House (Retrograde) conjunct ( 4°30′ apart, offset +4°30′) Midheaven 6° Aries in 10th House
+- North Node 11° Aries in 10th House (Retrograde) opposition (175°29′ apart, offset -4°30′) IC 6° Libra in 4th House
+- South Node 11° Libra in 4th House (Retrograde) opposition (175°29′ apart, offset -4°30′) Midheaven 6° Aries in 10th House
+- South Node 11° Libra in 4th House (Retrograde) conjunct ( 4°30′ apart, offset +4°30′) IC 6° Libra in 4th House
+- Ascendant 20° Cancer in 1st House conjunct ( 2°35′ apart, offset +2°35′) Black Moon 18° Cancer in 1st House (Retrograde)
+- Descendant 20° Capricorn in 7th House opposition (177°24′ apart, offset -2°35′) Black Moon 18° Cancer in 1st House (Retrograde)

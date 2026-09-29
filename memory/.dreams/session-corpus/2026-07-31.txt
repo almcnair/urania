@@ -1,0 +1,5 @@
+[urania/sessions/urania/0e39ce6a-6656-464c-a3e3-80f0cebd4aca.jsonl#L6] Assistant: I'll compute today's sky and check it against Austin's natal chart.
+[urania/sessions/urania/0e39ce6a-6656-464c-a3e3-80f0cebd4aca.jsonl#L11] User: What terminal should I pick her up at?
+[urania/sessions/urania/0e39ce6a-6656-464c-a3e3-80f0cebd4aca.jsonl#L12] Assistant: Not something I can answer from the sky, and not something I have live gate data for — the tracker page I checked earlier didn't expose a gate assignment. Delta ORD arrivals from Atlanta on DL1147 land at **Terminal 2**. That's Delta's ORD terminal — mainline d
+[urania/sessions/urania/0e39ce6a-6656-464c-a3e3-80f0cebd4aca.jsonl#L13] Assistant: Not something I can answer from the sky, and not something I have live gate data for — the tracker page I checked earlier didn't expose a gate assignment. Delta ORD arrivals from Atlanta on DL1147 land at **Terminal 2**. That's Delta's ORD terminal — mainline d
+[urania/sessions/urania/63b56ca7-0ea9-4324-b39b-e8ce8283b9a8.jsonl#L6] Assistant: I'll compute first, then interpret. Let me load the natal chart and check the skill.

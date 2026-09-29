@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Donnie — Natal Chart Roadmap | Austin McNair Astrology</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dune: '#F8F2E9',
+                        astronavy: '#204369',
+                        nightsky: '#0C1929',
+                        deepblack: '#050B14',
+                        oceanmist: '#66A9C9',
+                        aquamarine: '#56B0BC',
+                        ultrawhite: '#FFFFFF',
+                        goldaccent: '#D4AF37'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ── Shared shell (lifted verbatim from readings/donnie-natal-chart.html) ── */
+        html, body { min-height: 100%; }
+        body {
+            background: radial-gradient(ellipse at top, #204369 0%, #0C1929 55%, #050B14 100%);
+            background-attachment: fixed;
+            color: #F8F2E9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+        }
+        .starry {
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background-image:
+                radial-gradient(1px 1px at 12% 22%, rgba(255,255,255,0.6), transparent 50%),
+                radial-gradient(1px 1px at 28% 71%, rgba(255,255,255,0.4), transparent 50%),
+                radial-gradient(1px 1px at 44% 12%, rgba(255,255,255,0.5), transparent 50%),
+                radial-gradient(1.5px 1.5px at 63% 44%, rgba(255,255,255,0.55), transparent 50%),
+                radial-gradient(1px 1px at 78% 82%, rgba(255,255,255,0.45), transparent 50%),
+                radial-gradient(1px 1px at 91% 33%, rgba(255,255,255,0.5), transparent 50%),
+                radial-gradient(1.5px 1.5px at 55% 88%, rgba(212,175,55,0.35), transparent 50%),
+                radial-gradient(1px 1px at 20% 55%, rgba(102,169,201,0.4), transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.14);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-card-strong {
+            background: rgba(12, 25, 41, 0.65);
+            border: 1px solid rgba(86, 176, 188, 0.28);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+        .eyebrow {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+        }
+        .title {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.06em;
+        }
+        /* Unified site header + drawer, matches the rest of the site */
+        .site-glass-strong { background: rgba(12, 25, 41, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(86, 176, 188, 0.28); }
+        #menu-drawer { display: none; }
+        #menu-drawer.is-open { display: block; }
+        .nav-eyebrow { font-family: 'Cinzel', serif; letter-spacing: 0.28em; text-transform: uppercase; color: #66A9C9; }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #0C1929; }
+        ::-webkit-scrollbar-thumb { background: #66A9C9; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #56B0BC; }
+
+        /* ── Roadmap-specific additions on top of the shared shell ── */
+
+        /* Section number badge */
+        .section-num {
+            width: 2.5rem; height: 2.5rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            background: rgba(212, 175, 55, 0.08);
+            color: #D4AF37;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+        }
+
+        /* Data chip */
+        .data-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 9999px;
+            font-family: 'Cinzel', serif;
+            font-size: 10px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 500;
+            background: rgba(32, 67, 105, 0.55);
+            border: 1px solid rgba(102, 169, 201, 0.3);
+            color: #F8F2E9;
+            white-space: nowrap;
+        }
+        .data-chip--gold { color: #D4AF37; border-color: rgba(212, 175, 55, 0.5); background: rgba(212, 175, 55, 0.08); }
+        .data-chip--teal { color: #56B0BC; border-color: rgba(86, 176, 188, 0.5); background: rgba(86, 176, 188, 0.10); }
+
+        /* Glossary term (matches site glossary.css spirit, on dark) */
+        .term {
+            color: #D4AF37;
+            border-bottom: 1px dashed rgba(212, 175, 55, 0.6);
+            padding-bottom: 1px;
+            cursor: help;
+            font-weight: 500;
+            transition: color 150ms ease, border-color 150ms ease;
+            white-space: nowrap;
+        }
+        .term::after {
+            content: "?";
+            display: inline-block;
+            font-family: 'Cinzel', serif;
+            font-size: 0.62em;
+            vertical-align: super;
+            line-height: 1;
+            color: #D4AF37;
+            margin-left: 3px;
+            border: 1px solid rgba(212, 175, 55, 0.7);
+            border-radius: 9999px;
+            width: 1.2em;
+            height: 1.2em;
+            text-align: center;
+            transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease;
+        }
+        .term:hover,
+        .term:focus-visible {
+            color: #F8F2E9;
+            border-bottom-color: #F8F2E9;
+            outline: none;
+        }
+        .term:hover::after,
+        .term:focus-visible::after {
+            color: #0C1929;
+            background: #F8F2E9;
+            border-color: #F8F2E9;
+        }
+
+        /* Chart wheel placeholder */
+        .wheel-placeholder {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: rgba(12, 25, 41, 0.6);
+            border: 1px dashed rgba(212, 175, 55, 0.35);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .wheel-placeholder::before {
+            content: "";
+            position: absolute; inset: 6%;
+            border-radius: 9999px;
+            border: 1px solid rgba(102, 169, 201, 0.25);
+            background:
+                repeating-conic-gradient(
+                    from -15deg,
+                    rgba(102, 169, 201, 0.05) 0deg 30deg,
+                    transparent 30deg 60deg
+                );
+        }
+        .wheel-placeholder::after {
+            content: "";
+            position: absolute; inset: 32%;
+            border-radius: 9999px;
+            border: 1px solid rgba(212, 175, 55, 0.30);
+        }
+        .wheel-caption {
+            position: relative; z-index: 1;
+            text-align: center;
+            padding: 1rem;
+            max-width: 82%;
+        }
+        .wheel-caption .lbl {
+            display: block;
+            font-family: 'Cinzel', serif;
+            font-size: 10px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: #56B0BC;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .wheel-caption .val {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 12px;
+            color: #F8F2E9;
+            line-height: 1.7;
+        }
+        .wheel-caption .note {
+            display: block;
+            margin-top: 0.65rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 10px;
+            color: rgba(248, 242, 233, 0.5);
+            letter-spacing: 0.05em;
+        }
+
+        /* CTA button — matches passphrase gate style */
+        .btn-primary {
+            background: linear-gradient(135deg, #56B0BC 0%, #66A9C9 100%);
+            color: #0C1929;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(86,176,188,0.35);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #56B0BC;
+            border: 1px solid rgba(86, 176, 188, 0.6);
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: all 0.15s ease;
+        }
+        .btn-outline:hover {
+            background: rgba(86, 176, 188, 0.12);
+            border-color: #56B0BC;
+        }
+
+        /* Modal */
+        .modal-hidden { opacity: 0; pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Starfield backdrop (lifted from live shell) -->
+    <div class="starry"></div>
+
+    <!-- ============ HEADER / NAV (unified site nav — lifted verbatim) ============ -->
+    <header class="relative z-20 site-glass-strong border-b border-aquamarine/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 group">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0" aria-hidden="true"><g stroke="#D4AF37" stroke-width="5.5" fill="none" stroke-linecap="round"><line x1="30" y1="170" x2="72" y2="30"/><line x1="72" y1="30" x2="114" y2="170"/><line x1="51" y1="115" x2="152" y2="115"/><line x1="114" y1="170" x2="114" y2="30"/><line x1="114" y1="30" x2="152" y2="115"/><line x1="152" y1="115" x2="190" y2="30"/><line x1="190" y1="30" x2="190" y2="170"/></g><g fill="#F8F2E9"><circle cx="30" cy="170" r="4"/><circle cx="72" cy="30" r="5.5"/><circle cx="114" cy="170" r="4"/><circle cx="114" cy="30" r="5"/><circle cx="152" cy="115" r="6"/><circle cx="190" cy="30" r="5.5"/><circle cx="190" cy="170" r="4"/><circle cx="51" cy="115" r="3.5"/></g></svg>
+                <span class="nav-eyebrow text-[10px] hidden sm:inline">Astrologer</span>
+                <span class="font-serif text-xl sm:text-2xl text-dune font-medium leading-none group-hover:text-aquamarine transition-colors">Austin&nbsp;McNair</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="/#about" class="font-serif text-[11px] font-semibold tracking-wider text-dune hover:text-aquamarine px-3 py-2 rounded-full transition-colors uppercase">About</a>
+                <a href="/legend" class="font-serif text-[11px] font-semibold tracking-wider text-dune hover:text-aquamarine px-3 py-2 rounded-full transition-colors uppercase">Learn</a>
+                <a href="/for-clients" class="ml-2 font-serif text-[11px] font-semibold tracking-wider text-nightsky bg-aquamarine hover:bg-oceanmist px-4 py-2 rounded-full transition-colors uppercase">For Clients</a>
+            </nav>
+            <button id="hamburger-btn" aria-label="Open menu" aria-expanded="false" class="ml-3 flex items-center justify-center w-10 h-10 rounded-full border border-aquamarine/30 bg-nightsky/50 hover:border-aquamarine hover:text-aquamarine text-dune transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </div>
+        <div id="menu-drawer" class="fixed inset-0 z-30">
+            <div id="menu-backdrop" class="absolute inset-0 bg-nightsky/70 opacity-0 transition-opacity duration-300"></div>
+            <aside class="absolute top-0 right-0 h-full w-full max-w-sm site-glass-strong border-l border-aquamarine/25 shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col" id="menu-panel">
+                <div class="flex items-center justify-between px-5 h-16 border-b border-aquamarine/20">
+                    <span class="nav-eyebrow text-[10px]">Menu</span>
+                    <button id="menu-close" aria-label="Close menu" class="w-9 h-9 rounded-full border border-aquamarine/30 bg-nightsky/50 hover:border-aquamarine hover:text-aquamarine text-dune flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/></svg>
+                    </button>
+                </div>
+                <nav class="flex-1 overflow-y-auto px-5 py-6 space-y-1">
+                    <a href="/"             class="block font-serif text-2xl text-dune hover:text-aquamarine py-2">Home</a>
+                    <a href="/#about"       class="block font-serif text-2xl text-dune hover:text-aquamarine py-2">About</a>
+                    <a href="/legend"       class="block font-serif text-2xl text-dune hover:text-aquamarine py-2">Learn the Chart</a>
+                    <a href="/for-clients"  class="block font-serif text-2xl text-aquamarine hover:text-oceanmist py-2">For Clients</a>
+                </nav>
+                <div class="px-5 py-4 border-t border-aquamarine/20 text-xs text-oceanmist font-serif tracking-widest uppercase">Astrologer, Austin McNair</div>
+            </aside>
+        </div>
+    </header>
+
+    <!-- ============ MAIN — natal chart roadmap ============ -->
+    <main class="relative z-10 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-14">
+
+        <!-- ═══════ HERO ═══════ -->
+        <section class="text-center max-w-3xl mx-auto space-y-5">
+            <p class="eyebrow text-xs md:text-sm text-oceanmist">Client Natal Chart Roadmap</p>
+
+            <h1 class="title text-3xl sm:text-4xl md:text-5xl text-ultrawhite leading-tight">
+                Donnie's Natal Chart
+            </h1>
+
+            <p class="text-dune/85 text-base sm:text-lg leading-relaxed">
+                Your birth chart is not a set of predictions — it is a
+                <span class="text-dune font-semibold">personalized blueprint of your inner landscape</span>:
+                your natural strengths, emotional needs, and the arenas of life where your growth is being asked of you.
+            </p>
+
+            <p class="text-dune/60 text-sm leading-relaxed">
+                Tap any <span class="term" onclick="openTermModal('Ascendant')" role="button" tabindex="0">highlighted term</span> for a plain-language definition.
+            </p>
+
+            <!-- Client / birth data strip -->
+            <div class="glass-card rounded-full inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 px-5 py-2 text-xs">
+                <span class="inline-flex items-center gap-2">
+                    <span class="inline-block w-1.5 h-1.5 rounded-full bg-aquamarine"></span>
+                    <span class="eyebrow text-[10px] text-oceanmist">Client Profile</span>
+                </span>
+                <span class="text-oceanmist/60">·</span>
+                <span class="text-dune font-medium">Donnie</span>
+                <span class="text-oceanmist/60">·</span>
+                <span class="text-dune/70">Feb 9, 1972 · 10:45 AM CST · Chicago, IL</span>
+                <span class="text-oceanmist/60">·</span>
+                <span class="text-goldaccent font-medium">Taurus Rising 22°11' ♉</span>
+            </div>
+
+            <!-- Data grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 pt-4 text-left">
+                <div class="glass-card rounded-2xl p-3">
+                    <div class="eyebrow text-[9px] text-oceanmist font-semibold">Ascendant · 1st H</div>
+                    <div class="font-serif text-base text-goldaccent flex items-center justify-between mt-1">
+                        <span>Taurus 22°11'</span><span class="text-lg leading-none">♉</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-3">
+                    <div class="eyebrow text-[9px] text-oceanmist font-semibold">Sun · 10th H</div>
+                    <div class="font-serif text-base text-goldaccent flex items-center justify-between mt-1">
+                        <span>Aquarius 20°02'</span><span class="text-lg leading-none">☉</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-3">
+                    <div class="eyebrow text-[9px] text-oceanmist font-semibold">Moon · 8th H</div>
+                    <div class="font-serif text-base text-aquamarine flex items-center justify-between mt-1">
+                        <span>Sag 14°48'</span><span class="text-lg leading-none">☽</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-3">
+                    <div class="eyebrow text-[9px] text-oceanmist font-semibold">Chart Ruler</div>
+                    <div class="font-serif text-base text-goldaccent flex items-center justify-between mt-1">
+                        <span>Venus · Exalt</span><span class="text-lg leading-none">♀</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-3 col-span-2 sm:col-span-1">
+                    <div class="eyebrow text-[9px] text-oceanmist font-semibold">Stellium</div>
+                    <div class="font-serif text-base text-goldaccent flex items-center justify-between mt-1">
+                        <span>Aqu · 10th H</span><span class="text-lg leading-none">♒</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-dune/50 text-xs pt-2 eyebrow text-[10px]">
+                Whole-Sign Houses · Dominant Air · Fixed Modality
+            </p>
+        </section>
+
+        <!-- ═══════ SECTION 1: OUTLOOK & VITALITY ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6" id="section-1">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-aquamarine/20 pb-4">
+                <div class="flex items-center gap-4">
+                    <span class="section-num">01</span>
+                    <div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Section One</p>
+                        <h2 class="title text-2xl sm:text-3xl text-dune font-semibold">Your Outlook &amp; Vitality</h2>
+                    </div>
+                </div>
+                <span class="data-chip">Ascendant · Ruler · 1st H</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Chart wheel placeholder -->
+                <div class="lg:col-span-5">
+                    <figure class="max-w-[360px] mx-auto">
+                        <div class="wheel-placeholder" role="img"
+                             aria-label="Whole-sign natal chart wheel for Donnie, Taurus rising.">
+                            <div class="wheel-caption">
+                                <span class="lbl">Chart Wheel</span>
+                                <div class="val">
+                                    <strong>DONNIE</strong><br>
+                                    Whole-Sign · 12 Houses<br>
+                                    Taurus Rising · 22°11' ♉
+                                </div>
+                                <span class="note">[ drop final SVG/PNG here ]</span>
+                            </div>
+                        </div>
+                        <figcaption class="eyebrow text-[10px] text-oceanmist text-center mt-3">
+                            Whole-Sign · Gold Axis on ASC · MC
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:col-span-7 space-y-4">
+                    <h3 class="title text-xl md:text-2xl text-aquamarine font-semibold">The Steering Wheel of Your Life</h3>
+
+                    <!-- Card 1.1 · Ascendant -->
+                    <div class="glass-card rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-lg font-semibold text-goldaccent">Your Ascendant · Rising Sign</span>
+                            <span class="data-chip data-chip--gold">Taurus 22°11' ♉</span>
+                        </div>
+                        <p class="text-dune/85 leading-relaxed text-sm">
+                            <strong class="text-dune">What it means.</strong> Your
+                            <span class="term" onclick="openTermModal('Ascendant')" role="button" tabindex="0">Ascendant</span>
+                            is the zodiac sign that was rising on the eastern horizon at the moment of your birth. In Hellenistic astrology it functions as the doorframe of the whole chart — it sets which house is which, and it describes the way your life meets the world before you say a word.
+                        </p>
+                        <p class="text-dune/85 leading-relaxed text-sm bg-nightsky/50 p-3 rounded-xl border-l-2 border-goldaccent">
+                            <strong class="text-dune">Your placement.</strong>
+                            With Taurus rising, you meet life through a body and a temperament designed to endure. Taurus is a fixed earth sign — steady, embodied, patient, and famously hard to hurry. People tend to read you as unflappable and grounded, even when you are working hard internally. You build slowly. You commit slowly. Once you have committed, you are extraordinarily difficult to move off the position — a strength in most rooms and, occasionally, a stubbornness you have had to learn to work with. Your body is a real instrument for you; physical practice, physical craft, and physical presence carry information that words alone do not. The high degree (22°) of your rising sign means the Taurus quality is deeply set — not a light dusting, but the whole architecture.
+                        </p>
+                    </div>
+
+                    <!-- Card 1.2 · Chart Ruler -->
+                    <div class="glass-card rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-lg font-semibold text-goldaccent">Your Chart Ruler</span>
+                            <span class="data-chip data-chip--gold">Venus ♀ · Pisces · 11th H · Exalt</span>
+                        </div>
+                        <p class="text-dune/85 leading-relaxed text-sm">
+                            <strong class="text-dune">What it means.</strong> Because your Ascendant is Taurus, Venus rules your chart. Your
+                            <span class="term" onclick="openTermModal('Chart Ruler')" role="button" tabindex="0">Chart Ruler</span>
+                            is the planet whose condition tells you how your whole life-project runs — what fuel it burns, what shape it takes, and where its main current flows. It is the single most important placement in the delineation.
+                        </p>
+                        <p class="text-dune/85 leading-relaxed text-sm bg-nightsky/50 p-3 rounded-xl border-l-2 border-goldaccent">
+                            <strong class="text-dune">Your placement.</strong>
+                            Your Venus is in Pisces at 29°08' — the very last degree of the sign — and Pisces is the sign of Venus's
+                            <span class="term" onclick="openTermModal('Exaltation')" role="button" tabindex="0">Exaltation</span>.
+                            This is one of the strongest possible Venus placements available. Exaltation is the condition of a planet being not just at home but honored — operating at the top of its register, with grace and generosity of scope. Your Venus is idealistic, empathetic, artistic, and drawn toward the boundless — she does not do transactional relationships or cynical friendships. She lives in your 11th house of friends, allies, hopes, communities, and long-term aspirations, which means the <em>arena</em> where your chart ruler works is precisely the arena of chosen family, groups you build with, and the futures you dream toward. Your life project runs on love-of-people and love-of-vision, expressed through community. That is where you are strongest and where you are best fed. The last-degree placement (29°) also gives your Venus a completion-and-threshold quality — she often shows up in your life just as one chapter is closing and another is beginning.
+                        </p>
+                    </div>
+
+                    <!-- Card 1.3 · Planets in 1st House -->
+                    <div class="glass-card rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-lg font-semibold text-goldaccent">Planets in Your 1st House</span>
+                            <span class="data-chip">Saturn ♄ · Taurus 29°39'</span>
+                        </div>
+                        <p class="text-dune/85 leading-relaxed text-sm">
+                            Saturn sits in your 1st house at the very last degree of Taurus, riding just above your Ascendant. This is a load-bearing placement. Saturn in the 1st gives you the sense — from very young — that life has weight, that you carry responsibility others do not seem to carry, and that maturity, discipline, and self-command are not optional. It shapes the body: often lean, structured, well-held, and aging into itself gracefully. It shapes the affect: measured, composed, sometimes read by others as more reserved or serious than you actually feel inside. It shapes the will: you have built yourself. You did not simply arrive as the person you are now — you <em>made</em> this version through repetition, correction, and standing back up. The 29° degree here matters: Saturn at the last degree carries a signature of <em>thresholds and completions</em>, of doing the work fully before crossing over, of being the person who finishes what they started.
+                        </p>
+                        <p class="text-dune/85 leading-relaxed text-sm bg-nightsky/50 p-3 rounded-xl border-l-2 border-aquamarine">
+                            <strong class="text-aquamarine">Balancing.</strong>
+                            Your Venus (exalted, generous, communal) and your Saturn (disciplined, structured, self-contained) sit in
+                            <span class="term" onclick="openTermModal('Sextile')" role="button" tabindex="0">Sextile</span> — an aspect of active mutual support (0.52° from exact — very tight). This is a defining harmony in your chart: the softness knows the structure, and the structure knows the softness. You are not warm <em>or</em> disciplined. You are warm <em>through</em> discipline, and disciplined <em>in service of</em> what you love.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ SECTION 2: CORE ENGINES ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6" id="section-2">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-aquamarine/20 pb-4">
+                <div class="flex items-center gap-4">
+                    <span class="section-num">02</span>
+                    <div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Section Two</p>
+                        <h2 class="title text-2xl sm:text-3xl text-dune font-semibold">Your Core Engines</h2>
+                    </div>
+                </div>
+                <span class="data-chip">Sun &amp; Moon · The Luminaries</span>
+            </div>
+
+            <p class="text-dune/85 leading-relaxed">
+                The <strong class="text-goldaccent">Sun</strong> and <strong class="text-aquamarine">Moon</strong> are the two primary
+                <span class="term" onclick="openTermModal('Luminaries')" role="button" tabindex="0">Luminaries</span>. Together they form the dual engine of your psychology: conscious purpose and emotional need.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Sun -->
+                <div class="glass-card rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="w-11 h-11 rounded-full border border-goldaccent/60 bg-goldaccent/10 text-goldaccent flex items-center justify-center font-serif text-2xl">☉</div>
+                        <span class="data-chip data-chip--gold">Aquarius 20°02' · 10th H</span>
+                    </div>
+                    <h3 class="title text-xl text-goldaccent font-semibold">The Sun · Conscious Purpose &amp; Vocation</h3>
+                    <p class="eyebrow text-[10px] text-oceanmist">Fuel: Originality · Principled Independence · Public Contribution</p>
+                    <p class="text-dune/85 leading-relaxed text-sm">
+                        Your Sun is in Aquarius, in the 10th house of career, public standing, calling, and the work you are known for. This is a vocational placement in the classical sense — your conscious purpose is genuinely built around what you <em>do</em> in the world, not around private life or hidden work. Aquarius is the sign of the principled outlier: the person who thinks independently, who is unusually loyal to fairness and to their own values, who is not particularly interested in doing things the way they have always been done, and who is often ahead of their peers on questions about how a group <em>should</em> function. In the 10th house, this Aquarian current expresses itself as career — as the way you show up in public roles, on teams, in leadership positions, and in fields where being <em>known</em> matters. You are here to contribute something at scale, and you are here to do it your own way.
+                    </p>
+                    <p class="text-dune/70 leading-relaxed text-sm border-t border-aquamarine/15 pt-3">
+                        One quiet note — your Sun is in the sign of its
+                        <span class="term" onclick="openTermModal('Detriment')" role="button" tabindex="0">Detriment</span>
+                        (Aquarius is opposite Leo, Sun's domicile). This does not weaken your identity; it means your Sun-work is done <em>for the group and the principle</em> rather than <em>for personal glory</em>. Aquarius Sun is the placement of the servant-leader, the one who leads by being useful, not by being centered.
+                    </p>
+                </div>
+
+                <!-- Moon -->
+                <div class="glass-card rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="w-11 h-11 rounded-full border border-aquamarine/60 bg-aquamarine/10 text-aquamarine flex items-center justify-center font-serif text-2xl">☽</div>
+                        <span class="data-chip data-chip--teal">Sagittarius 14°48' · 8th H</span>
+                    </div>
+                    <h3 class="title text-xl text-aquamarine font-semibold">The Moon · Emotional Needs &amp; Inner Philosophy</h3>
+                    <p class="eyebrow text-[10px] text-oceanmist">Fuel: Meaning · Movement · Going Deep</p>
+                    <p class="text-dune/85 leading-relaxed text-sm">
+                        Your Moon in Sagittarius wants meaning, honesty, freedom of movement, and horizon. She feeds on travel (literal and philosophical), on teaching and being taught, on high ideals, on the outdoors, on frank speech, and on the sense that your life is going somewhere. Bored, cornered, or asked to pretend, she suffers. In the 8th house — a house of shared resources, intimate bonds, other people's money and psychology, and the deep interior life — she has a real assignment: she does not just want to know things at the surface. She wants to know the <em>undercurrent</em>. Emotionally, you are more comfortable with depth than most people expect from a person of your outer composure. You process feelings by going <em>toward</em> the shadow, not around it — you would rather understand what is really happening than perform that everything is fine. This Moon also often correlates with a sensitive, almost porous, relationship to what your partners and close intimates are feeling; you pick up on more than you say.
+                    </p>
+                    <p class="text-dune/70 leading-relaxed text-sm border-t border-aquamarine/15 pt-3">
+                        Your Moon is in her own
+                        <span class="term" onclick="openTermModal('Face')" role="button" tabindex="0">Face</span>
+                        (a small dignity, meaning she has some place of her own in Sagittarius) — which gives her the ability to hold her ground even when the emotional material is heavy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Balancing callout -->
+            <div class="glass-card rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 border-l-4 border-goldaccent">
+                <div class="w-10 h-10 rounded-full bg-goldaccent/10 border border-goldaccent/50 text-goldaccent flex items-center justify-center font-serif text-lg shrink-0">✦</div>
+                <p class="text-dune/90 leading-relaxed text-sm">
+                    <strong class="text-dune">Balancing the two lights.</strong>
+                    Sun in Aquarius (air, fixed, public, principled) and Moon in Sagittarius (fire, mutable, private-depths, meaning-seeking) form a
+                    <span class="term" onclick="openTermModal('Sextile')" role="button" tabindex="0">sextile</span> — an aspect of easy, active support. Your conscious purpose and your emotional needs are not at war; they fund each other. The catch: the two lights want <em>different registers</em> of expression — the Sun wants the group and the principle; the Moon wants the intimate deep-dive and the horizon. A well-lived life for you probably has both — a public arena, and a private practice that goes down further than the public one ever sees.
+                </p>
+            </div>
+        </section>
+
+        <!-- ═══════ SECTION 3: PLANETARY POWERS ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6" id="section-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-aquamarine/20 pb-4">
+                <div class="flex items-center gap-4">
+                    <span class="section-num">03</span>
+                    <div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Section Three</p>
+                        <h2 class="title text-2xl sm:text-3xl text-dune font-semibold">Special Planetary Powers</h2>
+                    </div>
+                </div>
+                <span class="data-chip">Domicile · Exaltation · Fall</span>
+            </div>
+
+            <p class="text-dune/85 leading-relaxed">
+                When planets sit in signs where they are strong or honored, they operate with unusual clarity and natural authority. When they sit in signs where they are constrained, they still work — but they work through discipline rather than ease.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <!-- Domicile · Mars -->
+                <div class="glass-card rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-aquamarine/20 pb-3">
+                        <span class="text-goldaccent font-serif text-2xl leading-none">♛</span>
+                        <div>
+                            <h3 class="title text-lg font-semibold text-dune">Domicile</h3>
+                            <p class="eyebrow text-[10px] text-oceanmist">At Home · Full Authority</p>
+                        </div>
+                    </div>
+                    <p class="text-dune/70 text-sm leading-relaxed">
+                        <span class="term" onclick="openTermModal('Domicile')" role="button" tabindex="0">Domicile</span>
+                        is the condition of a planet being in the sign it rules — on its own turf, operating with maximum authority.
+                    </p>
+                    <div class="bg-nightsky/50 rounded-xl p-4 space-y-2 border border-aquamarine/20">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-goldaccent font-semibold">Mars in Aries · 12th H</span>
+                            <span class="data-chip">29°24' ♈</span>
+                        </div>
+                        <p class="text-dune/85 text-sm leading-relaxed">
+                            Your Mars is in Aries, its own domicile, sitting at the very last degree. Mars-in-Aries is decisive, fast-processing, courageous, and unafraid of direct action — Mars at full power, no negotiation. In the 12th house the arena for that power is unusual: the 12th is the house of what is hidden, private, behind-the-scenes, and interior — practices done alone, work no one sees you doing, the psychological and spiritual undercurrent of your life. What this means for you is that your fire is <em>disciplined into private work</em>. You do not perform effort. You go somewhere quiet and <em>make</em> the effort, and what emerges into the visible world is finished. This is the placement of the person whose competence looks like ease because the struggle happened out of sight. The last-degree (29°) intensity here is real — your Mars carries a completion-signature, an "I will finish this before I stop" quality that others sometimes only see the outcome of.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exaltation · Venus -->
+                <div class="glass-card rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-aquamarine/20 pb-3">
+                        <span class="text-goldaccent font-serif text-2xl leading-none">✦</span>
+                        <div>
+                            <h3 class="title text-lg font-semibold text-dune">Exaltation</h3>
+                            <p class="eyebrow text-[10px] text-oceanmist">Honored · Elevated Register</p>
+                        </div>
+                    </div>
+                    <p class="text-dune/70 text-sm leading-relaxed">
+                        <span class="term" onclick="openTermModal('Exaltation')" role="button" tabindex="0">Exaltation</span>
+                        is the condition of a planet being not just at home but honored — operating at its highest register.
+                    </p>
+                    <div class="bg-nightsky/50 rounded-xl p-4 space-y-2 border border-goldaccent/40">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-goldaccent font-semibold">Venus in Pisces · 11th H</span>
+                            <span class="data-chip data-chip--gold">29°08' ♓</span>
+                        </div>
+                        <p class="text-dune/85 text-sm leading-relaxed">
+                            Your Venus is exalted in Pisces, in the 11th house. She is your chart ruler, and she is one of the most beautifully placed Venuses in the zodiac. She is idealistic, empathetic, artistic, drawn toward the boundless, and immune to cynicism about love and friendship — even when experience has given her reasons for cynicism. Her arena is community: chosen family, groups you build with, allies over the long arc, and the vision of what the future <em>could</em> be. What she does for you is act as the chart's main sweetener and connector — she draws people toward you, opens doors in communities, and keeps your relationships oriented toward the compassionate and the possible rather than the transactional. The last-degree placement gives her a <em>threshold</em> quality — she often shows up at the end of one chapter and the beginning of another.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenging Dignities · Jupiter in Fall -->
+            <div class="glass-card rounded-2xl p-5 space-y-4">
+                <div class="flex items-center gap-3 border-b border-aquamarine/20 pb-3">
+                    <span class="text-oceanmist font-serif text-2xl leading-none">⚔</span>
+                    <div>
+                        <h3 class="title text-lg font-semibold text-dune">Challenging Dignities</h3>
+                        <p class="eyebrow text-[10px] text-oceanmist">Slow · Structured · Earned</p>
+                    </div>
+                </div>
+                <div class="bg-nightsky/50 rounded-xl p-4 space-y-2 border border-aquamarine/20">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <span class="title text-dune font-semibold">Jupiter in Capricorn · 9th H</span>
+                        <span class="data-chip">0°32' ♑ · Fall</span>
+                    </div>
+                    <p class="text-dune/85 text-sm leading-relaxed">
+                        Your Jupiter is in the sign of its
+                        <span class="term" onclick="openTermModal('Fall')" role="button" tabindex="0">Fall</span>,
+                        Capricorn — at the very first degree. Fall is the condition of a planet being in the sign opposite its Exaltation; it is the most constrained condition a planet can be in short of Detriment. What this means practically: Jupiter is the planet of expansion, faith, meaning, opportunity, and generous scope — and yours has to work through Capricorn's structural, cautious, results-focused frame. Your Jupiter does not do easy expansion. He does not do "throw money at it and see what happens." He expands only when the work has been done, the structure has been built, and the case is airtight. This is not a bad Jupiter — it is a <em>slow</em> and <em>earned</em> Jupiter, and Jupiter sits in your 9th house of philosophy, higher learning, long journeys, and belief. Your relationship to meaning, faith, and how the world works has been carefully constructed rather than inherited. You will trust an idea when you have tested it, not before.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ SECTION 4: POWER CLUSTERS ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6" id="section-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-aquamarine/20 pb-4">
+                <div class="flex items-center gap-4">
+                    <span class="section-num">04</span>
+                    <div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Section Four</p>
+                        <h2 class="title text-2xl sm:text-3xl text-dune font-semibold">Your Power Clusters</h2>
+                    </div>
+                </div>
+                <span class="data-chip">Stellium · Concentrated Focus</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Stellium focus circle -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-3xl p-6 text-center space-y-4">
+                        <div class="relative w-44 h-44 mx-auto rounded-full border border-goldaccent/60 bg-nightsky/60 flex flex-col items-center justify-center p-3" style="box-shadow: 0 0 32px rgba(212, 175, 55, 0.28);">
+                            <span class="eyebrow text-[9px] text-oceanmist">10th House</span>
+                            <span class="title text-xl font-semibold text-dune mt-1">AQUARIUS ♒</span>
+                            <div class="flex items-center gap-2 mt-3">
+                                <span class="w-9 h-9 rounded-full border border-goldaccent/60 bg-goldaccent/10 text-goldaccent flex items-center justify-center font-serif text-lg" title="Sun">☉</span>
+                                <span class="w-9 h-9 rounded-full border border-aquamarine/50 bg-aquamarine/10 text-aquamarine flex items-center justify-center font-serif text-lg" title="Mercury">☿</span>
+                                <span class="w-9 h-9 rounded-full border border-oceanmist/50 bg-oceanmist/10 text-oceanmist flex items-center justify-center font-serif text-lg" title="North Node">☊</span>
+                            </div>
+                        </div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Donnie's 10th House Aquarius Stellium</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-4">
+                    <h3 class="title text-xl md:text-2xl font-semibold text-aquamarine">Concentrated Energy Centers</h3>
+
+                    <div class="glass-card rounded-2xl p-4 text-dune/85 leading-relaxed text-sm">
+                        <p>
+                            A <span class="term" onclick="openTermModal('Stellium')" role="button" tabindex="0">Stellium</span>
+                            is a concentration of three or more planets in one sign or house — a cluster that pulls the chart's center of gravity toward a single arena. Where a stellium lands, the chart focuses.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-5 space-y-3 border-l-4 border-goldaccent">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="title text-lg text-goldaccent font-semibold">Aquarius Stellium · 10th House</span>
+                            <span class="data-chip data-chip--gold">☉ ☿ ☊</span>
+                        </div>
+                        <p class="text-dune/85 text-sm leading-relaxed">
+                            Your cluster lands in <strong class="text-dune">Aquarius in the 10th house of career, public standing, calling, and the work you are known for.</strong> Three of the chart's most vocationally significant markers stack here: your Sun (conscious purpose), Mercury (mind, communication, how you think and speak), and your
+                            <span class="term" onclick="openTermModal('North Node')" role="button" tabindex="0">North Node</span>
+                            (the direction of soul-growth for this lifetime). The message is unusually consistent — your identity, your intellect, and your growth-vector all point to the same place, and that place is the <em>public work of an Aquarian outlier</em>.
+                        </p>
+                        <p class="text-dune/85 text-sm leading-relaxed">
+                            Concretely: you are here to <em>build a career</em>, and specifically a career that is your own — not a career someone else designed for you and not a career built on doing things the way they have always been done. Aquarius in the 10th is the sign of the professional principled independent — whose work reflects their values, whose reputation is built on originality of approach, and who is often working slightly ahead of their field. The North Node in this stack tells you that career-development is <em>soul-work</em> for you, not just a paycheck — the deepest developmental arc of your life goes through your public contribution. Mercury in the stack means your mind is one of your primary vocational tools: you think differently, and that difference is part of what you are here to offer.
+                        </p>
+                        <p class="text-dune/80 text-sm leading-relaxed bg-nightsky/60 border-l-2 border-aquamarine rounded-r p-3">
+                            <strong class="text-aquamarine">Nuance on Mercury.</strong>
+                            He sits close to the Sun (within about 5.7°), which in traditional terms places him "under the beams" — combust. What this means for you is that your intellect is fused to your identity in a way that is unusual: what you think, what you say, and <em>who you are</em> are closely bound. When your Sun is on-purpose, your mind is on-purpose. When your Sun is misaligned, your thinking suffers. Cultivating the Sun cultivates the Mercury.
+                        </p>
+                        <p class="text-dune/60 text-xs leading-relaxed pt-2 border-t border-aquamarine/15">
+                            The 10th house is the highest house in the chart — the visible top of your sky, where the Sun stood at noon on the day you were born. It is the house of <em>legacy</em>: the work that will be remembered after you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ SECTION 5: SYNTHESIS ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6" id="section-5">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-aquamarine/20 pb-4">
+                <div class="flex items-center gap-4">
+                    <span class="section-num">05</span>
+                    <div>
+                        <p class="eyebrow text-[10px] text-oceanmist">Section Five</p>
+                        <h2 class="title text-2xl sm:text-3xl text-dune font-semibold">Synthesizing Your Chart</h2>
+                    </div>
+                </div>
+                <span class="data-chip">Planet · Sign · House</span>
+            </div>
+
+            <h3 class="title text-xl md:text-2xl text-aquamarine font-semibold">The 3-Part Formula</h3>
+
+            <p class="text-dune/85 leading-relaxed">
+                Every placement in your chart follows a three-part structure that, once you see it, unlocks the whole reading. Any single placement can be read by asking: <em>Who is acting? In what style? On what stage?</em>
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="glass-card rounded-2xl p-4 text-center">
+                    <div class="eyebrow text-[10px] text-goldaccent font-semibold">1 · Planet · WHAT</div>
+                    <div class="title text-lg text-dune font-semibold mt-2">The Actor</div>
+                    <div class="text-dune/60 text-xs mt-1">Core archetype &amp; drives</div>
+                </div>
+                <div class="glass-card rounded-2xl p-4 text-center">
+                    <div class="eyebrow text-[10px] text-goldaccent font-semibold">2 · Sign · HOW</div>
+                    <div class="title text-lg text-dune font-semibold mt-2">The Costume</div>
+                    <div class="text-dune/60 text-xs mt-1">Style &amp; temperamental mode</div>
+                </div>
+                <div class="glass-card rounded-2xl p-4 text-center">
+                    <div class="eyebrow text-[10px] text-goldaccent font-semibold">3 · House · WHERE</div>
+                    <div class="title text-lg text-dune font-semibold mt-2">The Stage</div>
+                    <div class="text-dune/60 text-xs mt-1">Life environment</div>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-2">
+                <p class="eyebrow text-[10px] text-oceanmist">The Two Defining Synthesis Cards for Donnie</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="glass-card rounded-2xl p-4 space-y-2">
+                        <div class="flex items-center justify-between border-b border-aquamarine/20 pb-2 flex-wrap gap-2">
+                            <span class="title font-semibold text-dune">Card A · Reaching Outward</span>
+                            <span class="data-chip data-chip--gold">♀ ♓ 11H</span>
+                        </div>
+                        <p class="text-dune/85 leading-relaxed pt-1 text-sm">
+                            <strong class="text-goldaccent">Venus in Pisces · 11th House.</strong>
+                            Your defining placement. <strong>Actor:</strong> Venus — love, beauty, connection, value. <strong>Costume:</strong> Pisces — boundless, empathetic, idealistic, artistic, dissolving of barriers. <strong>Stage:</strong> the 11th house — friends, allies, communities, long-term hopes, chosen family.
+                        </p>
+                        <p class="text-dune/85 leading-relaxed text-sm">
+                            Read together: your capacity for love and connection expresses itself in a boundless, idealistic, compassionate register, and its natural arena is the community you build over time. This is why the people you gather around you tend to <em>become</em> your life's central architecture. Because Venus is <em>exalted</em> here — operating at her highest register — this current in you is genuinely powerful, not decorative.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 space-y-2">
+                        <div class="flex items-center justify-between border-b border-aquamarine/20 pb-2 flex-wrap gap-2">
+                            <span class="title font-semibold text-dune">Card B · Going Inward</span>
+                            <span class="data-chip">♂ ♈ 12H</span>
+                        </div>
+                        <p class="text-dune/85 leading-relaxed pt-1 text-sm">
+                            <strong class="text-goldaccent">Mars in Aries · 12th House.</strong>
+                            The counterweight. <strong>Actor:</strong> Mars — drive, courage, effort, direct action. <strong>Costume:</strong> Aries — fast, decisive, unafraid, first-mover. <strong>Stage:</strong> the 12th house — the private interior, the hidden work.
+                        </p>
+                        <p class="text-dune/85 leading-relaxed text-sm">
+                            Read together: your drive expresses itself with maximum courage and directness, and its natural arena is the private, behind-the-scenes work. You do the effort in solitude and let the <em>result</em> be what the world encounters. Where Card A tells you where your life <em>reaches outward</em>, Card B tells you where your life <em>goes inward to build</em>.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-nightsky/60 border-l-4 border-goldaccent rounded-r p-4">
+                    <p class="text-dune/90 leading-relaxed text-sm">
+                        <strong class="text-goldaccent">The two together — Venus exalted in the 11th, Mars in domicile in the 12th — sketch the shape of your life project.</strong> You build the private work alone, and you give the finished form to the community.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive sandbox -->
+            <div class="glass-card rounded-2xl p-5 space-y-4 border-goldaccent/40">
+                <div class="flex items-center justify-between flex-wrap gap-2 border-b border-aquamarine/20 pb-3">
+                    <h4 class="title text-xl text-goldaccent font-semibold">Interactive Synthesis Sandbox</h4>
+                    <span class="eyebrow text-[10px] text-oceanmist">Test combinations from Donnie's chart</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div>
+                        <label class="eyebrow text-[9px] text-oceanmist font-semibold block mb-1">Planet · Actor</label>
+                        <select id="sandbox-planet" onchange="updateInteractiveSynthesis()" class="w-full bg-nightsky/60 text-dune p-2.5 rounded-xl border border-aquamarine/30 focus:outline-none focus:border-aquamarine text-sm">
+                            <option value="Venus" selected>Venus ♀ · Exalted Chart Ruler</option>
+                            <option value="Sun">Sun ☉ · Purpose &amp; Vocation</option>
+                            <option value="Moon">Moon ☽ · Emotional Needs</option>
+                            <option value="Saturn">Saturn ♄ · Structure &amp; Discipline</option>
+                            <option value="Mars">Mars ♂ · Internal Drive</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="eyebrow text-[9px] text-oceanmist font-semibold block mb-1">Sign · Costume</label>
+                        <select id="sandbox-sign" onchange="updateInteractiveSynthesis()" class="w-full bg-nightsky/60 text-dune p-2.5 rounded-xl border border-aquamarine/30 focus:outline-none focus:border-aquamarine text-sm">
+                            <option value="Pisces" selected>Pisces ♓ · Empathetic</option>
+                            <option value="Aquarius">Aquarius ♒ · Original</option>
+                            <option value="Sagittarius">Sagittarius ♐ · Meaning-seeking</option>
+                            <option value="Taurus">Taurus ♉ · Grounded</option>
+                            <option value="Aries">Aries ♈ · Direct</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="eyebrow text-[9px] text-oceanmist font-semibold block mb-1">House · Stage</label>
+                        <select id="sandbox-house" onchange="updateInteractiveSynthesis()" class="w-full bg-nightsky/60 text-dune p-2.5 rounded-xl border border-aquamarine/30 focus:outline-none focus:border-aquamarine text-sm">
+                            <option value="11th House" selected>11H · Community &amp; Vision</option>
+                            <option value="10th House">10H · Career &amp; Legacy</option>
+                            <option value="1st House">1H · Identity &amp; Body</option>
+                            <option value="8th House">8H · Shared Depth</option>
+                            <option value="12th House">12H · Hidden Work</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-nightsky/60 rounded-xl p-4 space-y-2 border border-aquamarine/20">
+                    <div class="eyebrow text-[10px] text-goldaccent font-semibold" id="sandbox-title">Venus in Pisces · 11th House</div>
+                    <p class="text-dune/85 leading-relaxed text-sm" id="sandbox-result">
+                        Your capacity for love, connection, and creative vision expresses itself in a boundless, idealistic register, and finds its natural arena in the communities and chosen family you build over time. As your exalted chart ruler, this Venus runs the whole chart — and she runs it on empathy in service of a vision.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ NEXT STEPS ═══════ -->
+        <section class="glass-card-strong rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 text-center" id="book-section">
+            <p class="eyebrow text-xs text-oceanmist">Ready to explore deeper?</p>
+            <h2 class="title text-3xl sm:text-4xl text-dune font-semibold">Continue Your Journey</h2>
+            <p class="text-dune/75 max-w-2xl mx-auto leading-relaxed">
+                Now that you know the foundational architecture of your chart, take the next step on your personal timeline with Austin.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto pt-2 text-left">
+                <div class="glass-card rounded-2xl p-5 flex flex-col justify-between gap-4 border-goldaccent/40">
+                    <div class="space-y-2">
+                        <h3 class="title text-xl text-dune font-semibold">Book a 1-on-1 Consultation</h3>
+                        <p class="text-dune/70 text-sm leading-relaxed">
+                            Dive deeper into current transits, timing cycles, and specific life questions with Austin.
+                        </p>
+                    </div>
+                    <a href="/for-clients" class="btn-primary block text-center text-xs font-semibold px-4 py-3 rounded-lg">
+                        Schedule Session
+                    </a>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 flex flex-col justify-between gap-4">
+                    <div class="space-y-2">
+                        <h3 class="title text-xl text-dune font-semibold">Explore the Celestial Theater</h3>
+                        <p class="text-dune/70 text-sm leading-relaxed">
+                            Look up definitions for signs, planets, houses, and dignities in the reader's field guide.
+                        </p>
+                    </div>
+                    <a href="/legend" class="btn-outline block text-center text-xs font-semibold px-4 py-3 rounded-lg">
+                        Open Learn Guide
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="relative z-10 border-t border-aquamarine/25 bg-nightsky/40 backdrop-blur-md py-10 mt-6">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+            <div class="eyebrow text-[11px] text-oceanmist">Astrologer, Austin McNair</div>
+            <div class="text-dune/60 text-xs">Reading roadmap · Personal blueprint · Whole-sign houses</div>
+        </div>
+    </footer>
+
+    <!-- ============ TERM MODAL ============ -->
+    <div id="term-modal" class="fixed inset-0 z-50 bg-deepblack/70 backdrop-blur-sm flex items-center justify-center p-4 modal-hidden transition-opacity duration-200">
+        <div class="glass-card-strong rounded-2xl max-w-sm w-full p-6 space-y-3 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-aquamarine/20 pb-3">
+                <span id="modal-term-title" class="title text-xl text-goldaccent font-semibold">Term Title</span>
+                <button onclick="closeTermModal()" class="text-dune/70 hover:text-aquamarine text-sm" aria-label="Close">✕</button>
+            </div>
+            <p id="modal-term-desc" class="text-dune/90 text-sm leading-relaxed">
+                Term definition placeholder text.
+            </p>
+            <div class="text-right pt-1">
+                <button onclick="closeTermModal()" class="btn-primary text-[10px] font-semibold px-4 py-2 rounded-full">
+                    Got it
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Menu drawer (matches live site behavior)
+        (function () {
+            const drawer  = document.getElementById('menu-drawer');
+            const panel   = document.getElementById('menu-panel');
+            const backdrop= document.getElementById('menu-backdrop');
+            const openBtn = document.getElementById('hamburger-btn');
+            const closeBtn= document.getElementById('menu-close');
+
+            function open() {
+                drawer.classList.add('is-open');
+                requestAnimationFrame(() => {
+                    backdrop.style.opacity = '1';
+                    panel.classList.remove('translate-x-full');
+                });
+                openBtn.setAttribute('aria-expanded', 'true');
+            }
+            function close() {
+                backdrop.style.opacity = '0';
+                panel.classList.add('translate-x-full');
+                setTimeout(() => drawer.classList.remove('is-open'), 300);
+                openBtn.setAttribute('aria-expanded', 'false');
+            }
+            openBtn?.addEventListener('click', open);
+            closeBtn?.addEventListener('click', close);
+            backdrop?.addEventListener('click', close);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && drawer.classList.contains('is-open')) close();
+            });
+        })();
+
+        // Term modal — definitions sourced from roadmap.md GLOSSARY_TERMS block
+        const termDefinitions = {
+            'Ascendant':   'The zodiac sign rising on the eastern horizon at the moment of your birth. It represents your outer persona, physical vitality, and the way you meet the world before you say a word. It also sets the whole house structure of your chart.',
+            'Chart Ruler': 'The planet that rules your Ascendant sign. Its condition \u2014 where it is placed by sign and house, and how well-dignified it is \u2014 describes how your whole life-project runs. It is the single most important placement in a Hellenistic delineation.',
+            'Domicile':    'The condition of a planet being in the sign it rules. A domiciled planet operates at full strength, fluently and reliably, on its own terrain.',
+            'Exaltation':  'The condition of a planet being not just at home but honored \u2014 operating at the top of its register, with unusual grace and generosity of scope. There is one sign of exaltation for each traditional planet.',
+            'Detriment':   'The condition of a planet being in the sign opposite its domicile \u2014 working against the grain of the sign it is in. Not disastrous, but requires more effort to express the planet\u2019s function.',
+            'Fall':        'The condition of a planet being in the sign opposite its exaltation \u2014 the most constrained condition short of detriment. Fallen planets tend to work through discipline and structure rather than easy expression.',
+            'Face':        'A small essential dignity in traditional astrology \u2014 a 10\u00b0 segment of a sign where a planet has a modest place of its own. It gives a planet the ability to hold its ground even when other conditions are difficult.',
+            'Sextile':     'An aspect of 60\u00b0 between two planets. A supportive, active aspect \u2014 the two planets can cooperate easily when their placements are engaged.',
+            'Stellium':    'A concentration of three or more planets in a single sign or house. It pulls the chart\u2019s center of gravity toward that arena \u2014 wherever the stellium lands, the chart focuses.',
+            'Luminaries':  'The Sun and the Moon \u2014 the two primary light-givers in a natal chart. Together they represent conscious purpose (Sun) and emotional need (Moon).',
+            'North Node':  'One of two points where the Moon\u2019s orbit crosses the ecliptic \u2014 the northern crossing. In traditional practice it is read as the direction of soul-growth for this lifetime, the developmental vector you are here to move toward.',
+        };
+
+        function openTermModal(termKey) {
+            const modal = document.getElementById('term-modal');
+            const title = document.getElementById('modal-term-title');
+            const desc  = document.getElementById('modal-term-desc');
+            if (termDefinitions[termKey]) {
+                title.textContent = termKey;
+                desc.textContent  = termDefinitions[termKey];
+                modal.classList.remove('modal-hidden');
+            }
+        }
+        function closeTermModal() {
+            document.getElementById('term-modal').classList.add('modal-hidden');
+        }
+        document.getElementById('term-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'term-modal') closeTermModal();
+        });
+
+        // Sandbox — sourced from roadmap.md SANDBOX_ENTRIES block
+        const synthesisDatabase = {
+            "Venus-Pisces-11th House": {
+                title: "Venus in Pisces \u00b7 11th House",
+                text:  "Your capacity for love, connection, and creative vision expresses itself in a boundless, idealistic register, and finds its natural arena in the communities and chosen family you build over time. As your exalted chart ruler, this Venus runs the whole chart \u2014 and she runs it on empathy in service of a vision."
+            },
+            "Mars-Aries-12th House": {
+                title: "Mars in Aries \u00b7 12th House",
+                text:  "Your drive is fast, courageous, and direct, and its natural arena is the private work no one sees you doing. You do the effort in solitude and hand the finished form to the world. Mars in its own domicile here is powerful \u2014 this is the classical placement of the private warrior whose discipline shows only in the outcome."
+            },
+            "Sun-Aquarius-10th House": {
+                title: "Sun in Aquarius \u00b7 10th House",
+                text:  "Your conscious purpose is built around principled, original public contribution \u2014 the work you are known for, done your way. Aquarius in the 10th is the placement of the servant-leader and the professional outlier, someone whose reputation is built on values and independence rather than convention."
+            },
+            "Moon-Sagittarius-8th House": {
+                title: "Moon in Sagittarius \u00b7 8th House",
+                text:  "Emotionally you need meaning, freedom, and depth \u2014 you would rather understand what is really happening than perform that everything is fine. Your Moon feeds on horizon (travel, teaching, ideas) but does her real work in the intimate depths of shared life and interior process."
+            },
+            "Saturn-Taurus-1st House": {
+                title: "Saturn in Taurus \u00b7 1st House",
+                text:  "You have built yourself through discipline, self-command, and repetition \u2014 Saturn in the 1st shapes the body, the affect, and the will as a life-long project. Others read you as measured and composed; internally, you have earned that composure. In Taurus, the discipline is patient and embodied rather than harsh."
+            }
+        };
+
+        function updateInteractiveSynthesis() {
+            const planet = document.getElementById('sandbox-planet').value;
+            const sign   = document.getElementById('sandbox-sign').value;
+            const house  = document.getElementById('sandbox-house').value;
+            const key = `${planet}-${sign}-${house}`;
+            const titleElem  = document.getElementById('sandbox-title');
+            const resultElem = document.getElementById('sandbox-result');
+            if (synthesisDatabase[key]) {
+                titleElem.textContent  = synthesisDatabase[key].title;
+                resultElem.textContent = synthesisDatabase[key].text;
+            } else {
+                titleElem.textContent  = `${planet} in ${sign} \u00b7 ${house}`;
+                resultElem.textContent = `A hypothetical combination \u2014 ${planet} (the actor) expressing through ${sign} (the costume) on the stage of the ${house}. This particular blend is not one of Donnie\u2019s natal placements; the sandbox is showing you how the three-part formula works, not describing a real placement in the chart.`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[urania/sessions/urania/4f3e22c6-441c-438b-8f69-e6f4cae4a780.jsonl#L6] Assistant: I'll produce the briefing. Let me load the chart and compute the sky.
+[urania/sessions/urania/4f3e22c6-441c-438b-8f69-e6f4cae4a780.jsonl#L9] Assistant: Now let me compute the sky and the filtered forecast.
+[urania/sessions/urania/4f3e22c6-441c-438b-8f69-e6f4cae4a780.jsonl#L12] Assistant: Good morning, Austin. **Frame.** Monday, 28 September 2026 — day 17 of the current lunar cycle (Moon waning gibbous, 94.8% illuminated). Annual profection: **4th house, Libra activated, Venus Lord of the Year** (home / land / ancestors / hidden foundations — yo
+[urania/sessions/urania/4f3e22c6-441c-438b-8f69-e6f4cae4a780.jsonl#L12] Assistant: Moon regardless of chart. **Not void today.** Her next perfecting aspect is a square to Jupiter tomorrow evening (29 Sep, 18:45 CDT / 23:45 UTC), which is when the VOC window opens; she runs void into Wednesday midday. No stations, no lunations perfecting today

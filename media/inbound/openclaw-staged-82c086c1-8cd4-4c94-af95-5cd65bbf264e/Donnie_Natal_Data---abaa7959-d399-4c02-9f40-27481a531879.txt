@@ -1,0 +1,15 @@
+| Chicago, Illinois · 9 February 1972 · 10:45 AM Central.                                | Match?                                         |
+| ----------------------------------------------- | -------------------------------------------------- | ---------------------------------------------- |
+| Taurus Rising, 22°                              | 22°Taurus 11'12"                                   | ✅                                              |
+| Venus in Pisces, 11th, exalt                    | 29°Pisces 08', H11, exaltation confirmed           | ✅ (but at 29° — anaretic degree, worth naming) |
+| Saturn in Taurus 29° at ASC                     | 29°Taurus 39'36", H1                               | ✅ (also anaretic)                              |
+| Sun in Aquarius, 10th                           | 20°Aquarius 02', H10, in detriment                 | ✅                                              |
+| Moon in Sagittarius, 8th                        | 14°Sagittarius 48', H8                             | ✅                                              |
+| Mercury in Aquarius, 10th (implied by stellium) | 14°Aquarius 22', H10                               | ✅                                              |
+| North Node in Aquarius H10                      | Mean 04°Aq / True 05°Aq, H10                       | ✅                                              |
+| Jupiter in Capricorn, 9th, fall                 | 00°Capricorn 32', H9, fall confirmed               | ✅ (also on the H8/H9 cusp)                     |
+| Mars in Aries                                   | 29°Aries 24', H12, in domicile                     | ✅ (also anaretic!)                             |
+| Pluto in Libra, 6th                             | 01°Libra 42', H6, R                                | ✅                                              |
+| Venus sextile Saturn 0.5° orb                   | Venus 359.14°, Saturn 59.66° → sextile orb = 0.52° | ✅ exact                                        |
+| Jupiter square Pluto 1.2° orb                   | Jup 270.54°, Plu 181.70° → square orb = 1.17°      | ✅                                              |
+| Mars trine Jupiter 1.1° orb                     | Mars 29.41°, Jup 270.54° → trine orb = 1.13°       | ✅                                              |

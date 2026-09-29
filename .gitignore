@@ -1,0 +1,5 @@
+.DS_Store
+.openclaw/
+*.migrated.*
+.tmp/
+.clawhub/
