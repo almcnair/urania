@@ -18,35 +18,35 @@
 
 | Angle | Sign | Degree |
 |---|---|---|
-| Ascendant | Taurus | Taurus 11'12" |
-| Midheaven | Aquarius | Aquarius 18'35" |
-| Descendant | Scorpio | Scorpio 11'12" |
-| IC | Leo | Leo 18'35" |
+| Ascendant | Taurus | 22°Taurus 11'12" |
+| Midheaven | Aquarius | 00°Aquarius 18'35" |
+| Descendant | Scorpio | 22°Scorpio 11'12" |
+| IC | Leo | 00°Leo 18'35" |
 
 ## Planets (tropical, geocentric)
 
 | Body | Sign | Degree | House | Notes |
 |---|---|---|---|---|
-| Sun ☉ | Aquarius | Aquarius 02'30" | 10 | Sect light, detriment |
-| Moon ☽ | Sagittarius | Sagittarius 48'44" | 8 |  |
-| Mercury ☿ | Aquarius | Aquarius 22'27" | 10 |  |
-| Venus ♀ | Pisces | Pisces 08'07" | 11 | Benefic contrary to sect, chart ruler, exaltation |
-| Mars ♂ | Aries | Aries 24'49" | 12 | Malefic contrary to sect, domicile |
-| Jupiter ♃ | Capricorn | Capricorn 32'11" | 9 | Benefic of sect, fall |
-| Saturn ♄ | Taurus | Taurus 39'36" | 1 | Malefic of sect |
-| Uranus ♅ | Libra | Libra 10'59" ℞ | 6 |  |
-| Neptune ♆ | Sagittarius | Sagittarius 03'32" | 8 |  |
-| Pluto ♇ | Libra | Libra 41'59" ℞ | 6 |  |
-| Mean North Node ☊ | Aquarius | Aquarius 31'53" ℞ | 10 |  |
-| South Node ☋ | Leo | Aquarius 31'53" ℞ | 4 | |
-| Chiron ⚷ | Aries | Aries 27'31" | 12 |  |
+| Sun ☉ | Aquarius | 20°Aquarius 02'30" | 10 | Sect light, detriment |
+| Moon ☽ | Sagittarius | 14°Sagittarius 48'44" | 8 |  |
+| Mercury ☿ | Aquarius | 14°Aquarius 22'27" | 10 |  |
+| Venus ♀ | Pisces | 29°Pisces 08'07" | 11 | Benefic contrary to sect, chart ruler, exaltation |
+| Mars ♂ | Aries | 29°Aries 24'49" | 12 | Malefic contrary to sect, domicile |
+| Jupiter ♃ | Capricorn | 00°Capricorn 32'11" | 9 | Benefic of sect, fall |
+| Saturn ♄ | Taurus | 29°Taurus 39'36" | 1 | Malefic of sect |
+| Uranus ♅ | Libra | 18°Libra 10'59" ℞ | 6 |  |
+| Neptune ♆ | Sagittarius | 05°Sagittarius 03'32" | 8 |  |
+| Pluto ♇ | Libra | 01°Libra 41'59" ℞ | 6 |  |
+| Mean North Node ☊ | Aquarius | 04°Aquarius 31'53" ℞ | 10 |  |
+| South Node ☋ | Leo | 04°Aquarius 31'53" ℞ | 4 | |
+| Chiron ⚷ | Aries | 10°Aries 27'31" | 12 |  |
 
 ## Lots
 
 | Lot | Sign | Degree | House |
 |---|---|---|---|
-| Fortune ⊗ | Pisces | Pisces 57'25" | 11 |
-| Spirit  | Cancer | Cancer 24'58" | 3 |
+| Fortune ⊗ | Pisces | 16°Pisces 57'25" | 11 |
+| Spirit  | Cancer | 27°Cancer 24'58" | 3 |
 
 ## Whole-sign houses
 
@@ -87,24 +87,24 @@
 
 ### Progressed Planets
 
-| Body | Sign | Degree | Walking Natal House |
+| Body | Sign | Degree | Progressed House (Cancer ASC) |
 |---|---|---|---|
-| Sun | Aries | Aries 39'24" | 12 |
-| Moon | Sagittarius | Sagittarius 45'13" | 8 |
-| Mercury | Aries | Aries 45'07" | 12 |
-| Venus | Gemini | Gemini 23'25" | 2 |
-| Mars | Gemini | Gemini 18'53" | 2 |
-| Jupiter | Capricorn | Capricorn 39'36" | 9 |
-| Saturn | Gemini | Gemini 05'58" | 2 |
-| Uranus | Libra | Libra 21'50" | 6 |
-| Neptune | Sagittarius | Sagittarius 02'34" | 8 |
-| Pluto | Libra | Libra 19'37" | 6 |
-| MeanNode | Aquarius | Aquarius 38'15" | 10 |
-| TrueNode | Aquarius | Aquarius 59'36" | 10 |
-| Chiron | Aries | Aries 21'36" | 12 |
+| Sun | Aries | 14°Aries 39'24" | 10 |
+| Moon | Sagittarius | 14°Sagittarius 45'13" | 6 |
+| Mercury | Aries | 07°Aries 45'07" | 10 |
+| Venus | Gemini | 00°Gemini 23'25" | 12 |
+| Mars | Gemini | 05°Gemini 18'53" | 12 |
+| Jupiter | Capricorn | 07°Capricorn 39'36" | 7 |
+| Saturn | Gemini | 03°Gemini 05'58" | 12 |
+| Uranus | Libra | 16°Libra 21'50" | 4 |
+| Neptune | Sagittarius | 05°Sagittarius 02'34" | 6 |
+| Pluto | Libra | 00°Libra 19'37" | 4 |
+| MeanNode | Aquarius | 01°Aquarius 38'15" | 8 |
+| TrueNode | Aquarius | 01°Aquarius 59'36" | 8 |
+| Chiron | Aries | 13°Aries 21'36" | 10 |
 
 ### Progressed Moon Block
-- **Current Position:** 14°Sagittarius 45'13" in Natal House 8
+- **Current Position:** 14°Sagittarius 45'13" in Progressed House 6 (Cancer ASC)
 - **Next Sign Change:** Into Capricorn on 2028-01-03
 - **Secondary Lunation Phase:** Disseminating Phase (225–270°) — sharing what was learned
 
@@ -112,10 +112,10 @@
 
 | Angle | Sign | Degree |
 |---|---|---|
-| Ascendant | Cancer | Cancer 48'05" |
-| Midheaven | Pisces | Pisces 55'28" |
-| Descendant | Capricorn | Capricorn 48'05" |
-| IC | Virgo | Virgo 55'28" |
+| Ascendant | Cancer | 16°Cancer 48'05" |
+| Midheaven | Pisces | 24°Pisces 55'28" |
+| Descendant | Capricorn | 16°Capricorn 48'05" |
+| IC | Virgo | 24°Virgo 55'28" |
 
 ## Notes for editing
 
