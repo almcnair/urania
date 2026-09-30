@@ -94,24 +94,24 @@
 
 ### Progressed Planets
 
-| Body | Sign | Degree | Walking Natal House |
+| Body | Sign | Degree | Progressed House (Leo ASC) |
 |---|---|---|---|
-| Sun | Gemini | 20°Gemini 34'26" | 12 |
-| Moon | Sagittarius | 23°Sagittarius 10'21" | 6 |
-| Mercury | Cancer | 13°Cancer 42'39" | 1 |
-| Venus | Gemini | 01°Gemini 00'45" | 12 |
-| Mars | Cancer | 14°Cancer 11'46" | 1 |
-| Jupiter | Aries | 22°Aries 52'14" | 10 |
-| Saturn | Sagittarius | 17°Sagittarius 39'39" | 6 |
-| Uranus | Sagittarius | 24°Sagittarius 54'45" | 6 |
-| Neptune | Capricorn | 07°Capricorn 04'09" | 7 |
-| Pluto | Scorpio | 07°Scorpio 29'56" | 5 |
-| MeanNode | Aries | 07°Aries 54'49" | 10 |
-| TrueNode | Aries | 08°Aries 43'48" | 10 |
-| Chiron | Gemini | 22°Gemini 00'59" | 12 |
+| Sun | Gemini | 20°Gemini 34'26" | 11 |
+| Moon | Sagittarius | 23°Sagittarius 10'21" | 5 |
+| Mercury | Cancer | 13°Cancer 42'39" | 12 |
+| Venus | Gemini | 01°Gemini 00'45" | 11 |
+| Mars | Cancer | 14°Cancer 11'46" | 12 |
+| Jupiter | Aries | 22°Aries 52'14" | 9 |
+| Saturn | Sagittarius | 17°Sagittarius 39'39" | 5 |
+| Uranus | Sagittarius | 24°Sagittarius 54'45" | 5 |
+| Neptune | Capricorn | 07°Capricorn 04'09" | 6 |
+| Pluto | Scorpio | 07°Scorpio 29'56" | 4 |
+| MeanNode | Aries | 07°Aries 54'49" | 9 |
+| TrueNode | Aries | 08°Aries 43'48" | 9 |
+| Chiron | Gemini | 22°Gemini 00'59" | 11 |
 
 ### Progressed Moon Block
-- **Current Position:** 23°Sagittarius 10'21" in Natal House 6
+- **Current Position:** 23°Sagittarius 10'21" in Progressed House 5 (Leo ASC)
 - **Next Sign Change:** Into Capricorn on 2027-03-14
 - **Secondary Lunation Phase:** Full Phase (180–225°) — illumination, culmination
 
