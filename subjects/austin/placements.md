@@ -87,3 +87,39 @@
 - If you correct a placement, keep the same table format so Urania can parse it consistently.
 - If you add a new field (e.g. fixed stars, Vertex, midpoints, antiscia), give it its own section with a heading.
 - Do not delete the source-of-truth banner at the top.
+
+## Secondary Progressions (as of 30 Sept 2026, Age 39)
+
+> **Note:** Progressions change over time. The Moon moves ~1° per month; the Sun ~1° per year. This snapshot is for Autumn 2026.
+
+### Progressed Planets
+
+| Body | Sign | Degree | Walking Natal House |
+|---|---|---|---|
+| Sun | Gemini | 20°Gemini 34'26" | 12 |
+| Moon | Sagittarius | 23°Sagittarius 10'21" | 6 |
+| Mercury | Cancer | 13°Cancer 42'39" | 1 |
+| Venus | Gemini | 01°Gemini 00'45" | 12 |
+| Mars | Cancer | 14°Cancer 11'46" | 1 |
+| Jupiter | Aries | 22°Aries 52'14" | 10 |
+| Saturn | Sagittarius | 17°Sagittarius 39'39" | 6 |
+| Uranus | Sagittarius | 24°Sagittarius 54'45" | 6 |
+| Neptune | Capricorn | 07°Capricorn 04'09" | 7 |
+| Pluto | Scorpio | 07°Scorpio 29'56" | 5 |
+| MeanNode | Aries | 07°Aries 54'49" | 10 |
+| TrueNode | Aries | 08°Aries 43'48" | 10 |
+| Chiron | Gemini | 22°Gemini 00'59" | 12 |
+
+### Progressed Moon Block
+- **Current Position:** 23°Sagittarius 10'21" in Natal House 6
+- **Next Sign Change:** Into Capricorn on 2027-03-14
+- **Secondary Lunation Phase:** Full Phase (180–225°) — illumination, culmination
+
+### Solar Arc Angles (Arc: ~37.9°)
+
+| Angle | Sign | Degree |
+|---|---|---|
+| Ascendant | Leo | 28°Leo 33'07" |
+| Midheaven | Taurus | 14°Taurus 27'38" |
+| Descendant | Aquarius | 28°Aquarius 33'07" |
+| IC | Scorpio | 14°Scorpio 27'38" |
